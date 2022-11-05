@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>DJango Authentication</title>
+        <link rel="stylesheet" href="{%static 'css/authstyles.css'%}">
+    </head>
+    <style>
+.smallimg{
+            border:1px dotted black;
+            width:20%;
+            height:25px;
+            margin-top:10px;
+            margin-lef:2px;
+            margin-right:5px;
+        }
+        .smallimg:hover{
+            border:1.5px solid red;
+        }
+        ul1,li1{
+            float:right;
+            width:15%;
+            height:15px;
+}
+    </style>
+    <body>
+        <nav>
+            <div>
+                    <div>
+                    <h1> <marquee>
+                         <a href="/">SRI SAI EXAMINATION-CENTER</a>
+                   </marquee> </h1> <hr />
+                </div>
+
+                 <ul1>
+                    <label><img class="smallimg" src="{%static 'images/login.jpg'%}" alt="login.jpg"/></label>
+                    <li  align="right"> <a href="/signup/">Signup</a>  |
+                         <a href="/accounts/login/">Login</a> |
+                         <a href="/accounts/logout/">Logout</a> </li>
+                </ul1>
+
+            <ul>
+                    <li  align="left"> <a href="/"><div class="indiv"><img class="smallimg" src="{%static 'images/javalogo.jpg'%}" alt="javalogo.jpg" /></div></a>
+                         <a href="/"><div class="indiv"><img class="smallimg" src="{%static 'images/pythonlogo.jpg'%}" alt="pythonlogo.jpg" /> </div></a>
+                         <a href="/"><div class="indiv"><img class="smallimg" src="{%static 'images/Aptitudelogo.jpg'%}" alt="Aptitudelogo.jpg" /> </div></a>
+                    </li></hr>
+            </ul>
+
+                <!--             <img class="smallimg" src="{%static 'images/picture1.jpg'%}" alt="picture1.jpg" /> -->
+
+            </div>
+        </nav>
+
+        <hr />
+        <br />
+        {%block body_block%}
+        {%endblock%}
+    </body>
+</html>

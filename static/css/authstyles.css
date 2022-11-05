@@ -1,0 +1,18 @@
+body
+{
+    background: lightyellow;
+    color:blue;
+}
+.jumbotron
+{
+    background:cyan;
+    color:red;
+}
+ul,li{
+    align:left;
+}
+ul1,li1{
+    float:left;
+     width:10%;
+     height:15px;
+}
